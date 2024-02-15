@@ -1,7 +1,8 @@
 import unittest
 from collections import defaultdict
 
-from models import SuperMarket, Item
+from app.models.supermarket import SuperMarket
+from app.models.item import Item
 
 class TestSuperMarket(unittest.TestCase):
     def setUp(self):

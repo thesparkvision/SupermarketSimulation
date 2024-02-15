@@ -1,4 +1,4 @@
-from models import Item
+from app.models.item import Item
 
 NO_OF_ITEMS = "no_of_items"
 GROUP_PRICE = "group_price"

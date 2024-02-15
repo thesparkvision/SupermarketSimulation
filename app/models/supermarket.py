@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from constants import NO_OF_ITEMS, GROUP_PRICE
+from app.constants import NO_OF_ITEMS, GROUP_PRICE
 from .item import Item
 
 class SuperMarket:

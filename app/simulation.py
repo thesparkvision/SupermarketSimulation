@@ -1,5 +1,6 @@
-from models import Item, SuperMarket
-from constants import ITEMS_INVENTORY, SPECIAL_PRICES_INVENTORY
+from app.models.item import Item
+from app.models.supermarket import SuperMarket
+from app.constants import ITEMS_INVENTORY, SPECIAL_PRICES_INVENTORY
 
 supermarket_instance = None
 

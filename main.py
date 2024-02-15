@@ -1,4 +1,4 @@
-from supermarket_simulation import run_custom_supermarket_simulation, run_configured_supermarket_simulation
+from app.simulation import run_custom_supermarket_simulation, run_configured_supermarket_simulation
 
 if __name__ == "__main__":
     print("Welcome to Supermarket Simulation!")

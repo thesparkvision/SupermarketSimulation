@@ -1,6 +1,6 @@
 import unittest
 
-from models import Item
+from app.models.item import Item
 
 class TestItem(unittest.TestCase):
     def test_get_unit_price(self):
