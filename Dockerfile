@@ -1,13 +1,19 @@
-FROM python:3.9
+FROM python:3.10
 
-WORKDIR /app
+WORKDIR /container
 
-# Install virtual environment
-RUN python -m venv venv
+# Install make
+RUN apt-get update && apt-get install -y make
 
 # Update pip
-RUN /bin/bash -c "source venv/bin/activate && pip install --upgrade pip"
+RUN /bin/bash -c "pip install --upgrade pip"
 
 # Copy requirements.txt separately and install dependencies
 COPY requirements.txt .
-RUN /bin/bash -c "source venv/bin/activate && pip install -r requirements.txt"
+COPY Makefile .
+COPY main.py .
+COPY app ./app
+
+RUN chmod +x .
+
+RUN /bin/bash -c "pip install -r requirements.txt"

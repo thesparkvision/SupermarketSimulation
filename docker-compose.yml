@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  supermarket_simulation:
-    build:
-      context: .
-    volumes:
-      - .:/app
